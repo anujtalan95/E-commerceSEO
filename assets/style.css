@@ -1,0 +1,389 @@
+
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/* Padding below the footer and lighter body text */
+
+body
+{
+    color: #5a5a5a;
+    background-color: #ededf5;
+}
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+
+.navbar-brand
+{
+    background-image: url('images/MainLogo.png');
+    background-size: cover;
+    width: 112px;
+}
+
+.navbar-wrapper
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+
+.navbar-wrapper > .container
+{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.navbar-wrapper .navbar
+{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.navbar-wrapper .navbar .container
+{
+    width: auto;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+
+.carousel
+{
+    height: 500px;
+    margin-bottom: 60px;
+}
+
+/* Since positioning the image, we need to help out the caption */
+
+.carousel-caption
+{
+    z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+
+.carousel .item
+{
+    height: 500px;
+    background-color: #777;
+}
+
+.carousel-inner > .item > img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 500px;
+}
+
+/* Center align the text within the three columns below the carousel */
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider
+{
+    margin: 80px 0;
+}
+
+/* Thin out the marketing headings */
+
+.featurette-heading
+{
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+}
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px)
+{
+/* Navbar positioning foo */
+    .navbar-wrapper
+    {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar
+    {
+        padding-right: 0;
+        padding-left: 0;
+    }
+/* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar
+    {
+        border-radius: 4px;
+    }
+/* Bump up size of carousel content */
+    .carousel-caption p
+    {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .featurette-heading
+    {
+        font-size: 50px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .featurette-heading
+    {
+        margin-top: 120px;
+    }
+}
+
+/* Products Container */
+
+.products .col-md-3 img
+{
+    margin-left: 65px;
+}
+
+.products .col-md-3 h3
+{
+    margin-left: 65px;
+}
+
+.products .col-md-3 p
+{
+    margin-left: 75px;
+}
+
+.products .col-xs-6
+{
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.products
+{
+    background-color: #ffffff;
+    border-radius: 6px;
+}
+
+#brands
+{
+    margin-top: 9px;
+    margin-right: 11px;
+    margin-left: 15px;
+}
+
+#brands li > img
+{
+    opacity: 0.7;
+}
+
+#brands li > img:hover
+{
+    opacity: 1;
+}
+
+/* App Section */
+
+#app-section
+{
+    min-height: 400px;
+    background-image: url('images/bg-footer-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+#app-section h2
+{
+    text-align: center;
+    font-weight: 300;
+    font-size: 36px;
+    color: #f7f3f3;
+    position: relative;
+    margin-top: 80px;
+}
+
+#app-logo
+{
+    margin-top: 73px;
+}
+
+#app-logo .col-md-6
+{
+}
+
+/* footer Section */
+
+#footer-row h3
+{
+    font-size: 28px;
+    color: #ffffff;
+}
+
+#footer-row ul > li:hover
+{
+    color: #ec6952;
+}
+
+footer
+{
+    background-color: #20364a;
+}
+
+#footer-row ul > li
+{
+    color: #ffffff;
+    font-weight: normal;
+}
+
+#footer-row .social
+{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#footer-row .form-container p
+{
+    color: #fff;
+    white-space: nowrap;
+}
+
+#formInput
+{
+    width: auto;
+    border-color: #eeeeee;
+    -webkit-opacity: 0.9;
+    -moz-opacity: 0.9;
+    opacity: 0.9;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+#subscribe-Button
+{
+    background: #5d80a1;
+    border-color: #5d80a1;
+    color: #fff;
+}
+
+#subscribe-Button:hover
+{
+    background-color: #43719d;
+}
+
+#footer-row .col-xs-12
+{
+    padding-top: 20px;
+    padding-bottom: 22px;
+}
+
+#footer-row .social li > a .fa:hover
+{
+    color: #ec6952;
+}
+
+.products .row .col-xs-6 img
+{
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.products .row .col-xs-6 img:hover
+{
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.products .row .col-xs-6 .product-img
+{
+    overflow: hidden;
+}
+
+.bottom-bar
+{
+    background: #1e1e1e;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.bottom-bar small
+{
+    color: #bbbbbb;
+}
+
+#navbar .dropdown .dropdown-menu
+{
+    border-radius: 4px;
+    margin: 0;
+    border: none;
+    text-transform: none;
+    min-width: 180px;
+    background: #253340;
+}
+
+#navbar .dropdown .dropdown-menu a
+{
+    border-bottom: 1px solid #212e3a;
+    padding: 8px 20px;
+    color: #fff;
+    opacity: 1;
+}
+
+#navbar .dropdown .dropdown-menu a:hover
+{
+    background-color: #3f586e;
+}
+
+#navbar .dropdown .dropdown-menu .btn-login
+{
+    border: 2px solid #ec6952;
+    color: #ec6952;
+    font-weight: 600;
+    height: 30px;
+    border-radius: 5px;
+    background: transparent;
+    margin-left: 20px;
+    margin-right: 29px;
+    padding-bottom: 28px;
+}
+
+.product-carousel .btn-default
+{
+    border: 2px solid #ec6952;
+    color: #ec6952;
+    font-weight: 600;
+}
+
+.product-carousel .btn-default:hover
+{
+    background: #ec6952;
+    color: #fff;
+}
+
+#navbar .dropdown .dropdown-menu .btn-login:hover
+{
+    background: #ec6952;
+    color: #fff;
+}
+
