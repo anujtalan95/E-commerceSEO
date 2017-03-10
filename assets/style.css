@@ -32,6 +32,51 @@ body
     z-index: 20;
 }
 
+/*-------- Navbar dropdown menu style------*/
+
+#navbar .dropdown .dropdown-menu
+{
+    border-radius: 4px;
+    margin: 0;
+    border: none;
+    text-transform: none;
+    min-width: 180px;
+    background: #253340;
+}
+
+#navbar .dropdown .dropdown-menu a
+{
+    border-bottom: 1px solid #212e3a;
+    padding: 8px 20px;
+    color: #fff;
+    opacity: 1;
+}
+
+#navbar .dropdown .dropdown-menu a:hover
+{
+    background-color: #3f586e;
+}
+
+#navbar .dropdown .dropdown-menu .btn-login
+{
+    border: 2px solid #ec6952;
+    color: #ec6952;
+    font-weight: 600;
+    height: 30px;
+    border-radius: 5px;
+    background: transparent;
+    margin-left: 20px;
+    margin-right: 29px;
+    padding-bottom: 28px;
+}
+
+#navbar .dropdown .dropdown-menu .btn-login:hover
+{
+    background: #ec6952;
+    color: #fff;
+}
+
+
 /* Flip around the padding for proper display in narrow viewports */
 
 .navbar-wrapper > .container
@@ -179,6 +224,42 @@ body
     background-color: #ffffff;
     border-radius: 6px;
 }
+.products .row .col-xs-6 img
+{
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.products .row .col-xs-6 img:hover
+{
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.products .row .col-xs-6 .product-img
+{
+    overflow: hidden;
+}
+
+.product-carousel .btn-default
+{
+    border: 2px solid #ec6952;
+    color: #ec6952;
+    font-weight: 600;
+}
+
+.product-carousel .btn-default:hover
+{
+    background: #ec6952;
+    color: #fff;
+}
+
+/*----brand section----*/
 
 #brands
 {
@@ -229,6 +310,11 @@ body
 
 /* footer Section */
 
+footer
+{
+    background-color: #20364a;
+}
+
 #footer-row h3
 {
     font-size: 28px;
@@ -238,11 +324,6 @@ body
 #footer-row ul > li:hover
 {
     color: #ec6952;
-}
-
-footer
-{
-    background-color: #20364a;
 }
 
 #footer-row ul > li
@@ -262,6 +343,17 @@ footer
 {
     color: #fff;
     white-space: nowrap;
+}
+
+#footer-row .col-xs-12
+{
+    padding-top: 20px;
+    padding-bottom: 22px;
+}
+
+#footer-row .social li > a .fa:hover
+{
+    color: #ec6952;
 }
 
 #formInput
@@ -287,39 +379,6 @@ footer
     background-color: #43719d;
 }
 
-#footer-row .col-xs-12
-{
-    padding-top: 20px;
-    padding-bottom: 22px;
-}
-
-#footer-row .social li > a .fa:hover
-{
-    color: #ec6952;
-}
-
-.products .row .col-xs-6 img
-{
-    -webkit-transition: all .5s;
-    -moz-transition: all .5s;
-    -o-transition: all .5s;
-    transition: all .5s;
-}
-
-.products .row .col-xs-6 img:hover
-{
-    -ms-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-.products .row .col-xs-6 .product-img
-{
-    overflow: hidden;
-}
-
 .bottom-bar
 {
     background: #1e1e1e;
@@ -332,58 +391,76 @@ footer
     color: #bbbbbb;
 }
 
-#navbar .dropdown .dropdown-menu
-{
-    border-radius: 4px;
-    margin: 0;
-    border: none;
-    text-transform: none;
-    min-width: 180px;
-    background: #253340;
-}
+/*-----login and register style css-----*/
 
-#navbar .dropdown .dropdown-menu a
+.login-box
 {
-    border-bottom: 1px solid #212e3a;
-    padding: 8px 20px;
-    color: #fff;
-    opacity: 1;
-}
-
-#navbar .dropdown .dropdown-menu a:hover
-{
-    background-color: #3f586e;
-}
-
-#navbar .dropdown .dropdown-menu .btn-login
-{
-    border: 2px solid #ec6952;
-    color: #ec6952;
-    font-weight: 600;
-    height: 30px;
+    height: 450px;
+    width: 600px;
     border-radius: 5px;
-    background: transparent;
-    margin-left: 20px;
-    margin-right: 29px;
-    padding-bottom: 28px;
 }
 
-.product-carousel .btn-default
+.right-side
 {
-    border: 2px solid #ec6952;
-    color: #ec6952;
-    font-weight: 600;
+    width: 384px;
+    height: 450px;
+    background: #fff;
 }
 
-.product-carousel .btn-default:hover
+.left-side
 {
-    background: #ec6952;
+    width: 230px;
+    height: 450px;
+    background: #ec694f;
+    margin-left: 15px;
+    border-radius: 4px;
+}
+
+#login-btn
+{
+    width: 298px;
+    margin-top: 60px;
+    background: #ec694f;
+    color: #fff;
+    margin-left: 40px;
+    height: 45px;
+}
+
+#register-btn
+{
+    width: 298px;
+    margin-top: 17px;
+    background: #fff;
+    color: #ec694f;
+    margin-left: 40px;
+    height: 45px;
+}
+
+.right-side .mdl-textfield
+{
+    margin-left: 40px;
+    top: 45px;
+}
+
+.right-side .mdl-checkbox
+{
+    margin-left: 40px;
+    margin-top: 38px;
+}
+
+.login-box .right-side h2,p
+{
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 150%;
+}
+
+#login-text
+{
     color: #fff;
 }
 
-#navbar .dropdown .dropdown-menu .btn-login:hover
-{
-    background: #ec6952;
-    color: #fff;
-}
+
+
 
