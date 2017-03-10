@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>Login Page</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+        <!-- Material design core CSS -->
+        <link href="assets/mdl/material.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <!-- Custom styles for this template -->
+        <link href="assets/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,300,500,700">
+    </head>
+    <body>
+        <div class="container">
+            <div class="login-box">
+                <div class="row">
+                    <div class="col-md-6 left-side">
+                        <h2 id="login-text">
+                        Login</h2>
+                        <p>
+                            Get access to your Orders,<br>
+                            Wishlist and Cart.</p>
+                    </div>
+                    <div class="col-md-6 right-side"> 
+                        <!-- Textfield with Floating Label -->
+                        <form action="#">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" id="sample3">
+                                <label class="mdl-textfield__label" for="sample3">Enter Email Address</label>
+                            </div>
+                            <!-- Numeric Textfield with Floating Label -->
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+                                <label class="mdl-textfield__label" for="sample4">Enter Password</label>
+                                <span class="mdl-textfield__error">Input is not a number!</span>
+                            </div>
+                            <!-- Raised button with ripple -->
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="login-btn">Login</button>
+                            <!-- Raised button with ripple -->
+                            <a href="signup.html"><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="register-btn">Sign Up</button></a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/mdl/material.min.js"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>
