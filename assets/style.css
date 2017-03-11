@@ -1,6 +1,6 @@
 
 
-/* GLOBAL STYLES
+/* MAIN STYLE CSS FILE
 -------------------------------------------------- */
 
 /* Padding below the footer and lighter body text */
@@ -32,7 +32,8 @@ body
     z-index: 20;
 }
 
-/*-------- Navbar dropdown menu style------*/
+/* Navbar dropdown menu style
+---------------------------------------------------*/
 
 #navbar .dropdown .dropdown-menu
 {
@@ -75,7 +76,6 @@ body
     background: #ec6952;
     color: #fff;
 }
-
 
 /* Flip around the padding for proper display in narrow viewports */
 
@@ -224,6 +224,7 @@ body
     background-color: #ffffff;
     border-radius: 6px;
 }
+
 .products .row .col-xs-6 img
 {
     -webkit-transition: all .5s;
@@ -259,7 +260,8 @@ body
     color: #fff;
 }
 
-/*----brand section----*/
+/*Brand section
+---------------------------------------*/
 
 #brands
 {
@@ -278,7 +280,8 @@ body
     opacity: 1;
 }
 
-/* App Section */
+/* App Section
+------------------------------------------ */
 
 #app-section
 {
@@ -308,7 +311,8 @@ body
 {
 }
 
-/* footer Section */
+/* footer Section
+---------------------------------------------- */
 
 footer
 {
@@ -391,7 +395,8 @@ footer
     color: #bbbbbb;
 }
 
-/*-----login and register style css-----*/
+/*  Login and register style css
+-------------------------------------------------*/
 
 .login-box
 {
@@ -461,6 +466,157 @@ footer
     color: #fff;
 }
 
+/* Cart page style css code
+----------------------------------------------------------*/
+
+/*-------RESPONSIVE CSS------*/
+
+/*--------Content box hide or show on screen sizes-------*/
+
+@media (max-width:767px)
+{
+    #place-order-content
+    {
+        display: none;
+    }
+}
+
+@media (min-width:768px)
+{
+    .btn-group
+    {
+        display: none;
+    }
+}
+
+#wrapper
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#page-wrapper
+{
+    padding: 0 15px;
+    position: relative !important;
+    min-height: 568px;
+}
+
+.wrapper-content
+{
+    padding: 20px 0px 40px;
+}
+
+.ibox-content h1,
+.ibox-content h2,
+.ibox-content h3,
+.ibox-content h4,
+.ibox-content h5,
+.ibox-title h1,
+.ibox-title h2,
+.ibox-title h3,
+.ibox-title h4,
+.ibox-title h5
+{
+    margin-top: 5px;
+}
+
+.ibox
+{
+    clear: both;
+    padding: 0;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    -webkit-box-shadow: 0px 3px 7px -2px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 7px -2px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 7px -2px rgba(0,0,0,0.75);
+}
 
 
+.ibox:after,
+.ibox:before
+{
+    display: table;
+}
+
+.ibox-title
+{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #ffffff;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 2px 0 0;
+    color: inherit;
+    margin-bottom: 0;
+    padding: 15px 15px 7px;
+    min-height: 48px;
+}
+
+.ibox-content
+{
+    background-color: #ffffff;
+    color: inherit;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;
+    padding: 15px 20px;
+}
+
+.ibox-content
+{
+    clear: both;
+}
+
+.ibox-title h5
+{
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 0 7px;
+    padding: 0;
+    text-overflow: ellipsis;
+    float: left;
+    font-weight: 600;
+    font-family: roboto;
+}
+
+#checkout-button
+{
+    float: right;
+}
+
+.btn-group
+{
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    background: #fff;
+    height: 53px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+}
+
+.mdl-button span
+{
+    color: #fff;
+    font-family: roboto;
+}
+
+.mdl-button i
+{
+    color: #fff;
+}
+
+#place-order-content
+{
+    -webkit-box-shadow: -1px -1px 11px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px -1px 11px -2px rgba(0,0,0,0.75);
+    box-shadow: -1px -1px 11px -2px rgba(0,0,0,0.75);
+}
 
