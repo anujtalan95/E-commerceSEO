@@ -1,4 +1,25 @@
 $(document).ready(function(){
+  $('.single-item').slick({
+    dots: true,
+    infinite: true,
+    autoplay:true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+    ]
+  });
+  
   $('.product-carousel').slick({
     infinite:false,
     arrows:true,
