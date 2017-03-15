@@ -51,4 +51,18 @@ $(document).ready(function(){
       }
     ]
   });
+
+$("#login-button").click(function(event){
+  event.preventDefault();
+  $("#myModal").fadeToggle("fast");
+});
+
+$("#login-button2").click(function(event){
+  event.preventDefault();
+  $("#myModal").fadeToggle("fast");
+});
+
+$(".close").click(function(){
+  $("#myModal").fadeToggle("fast");
+})  
 });
