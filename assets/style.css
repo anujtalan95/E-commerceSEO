@@ -35,7 +35,7 @@ body
 /*  Responsive CSS for search box and Header
 -------------------------------------------------------*/
 
-@media (min-width:768px)
+@media (min-width: 600px)
 {
     #search-box
     {
@@ -45,7 +45,7 @@ body
     }
 }
 
-@media (max-width:767px)
+@media (max-width: 599px)
 {
     #search-box
     {
@@ -114,10 +114,15 @@ body
 {
     .single-item
     {
-        margin-left: 5px;
-        margin-right: 5px;
         border-radius: 4px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 7px;
     }
+}
+
+@media (max-width: 599px)
+{
     .slide
     {
         height: 180px;
@@ -131,13 +136,16 @@ body
     border-radius: 4px;
 }
 
-.single-item
+@media (min-width:768px)
 {
-    margin-left: 40px;
-    margin-right: 40px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-top: 8px;
+    .single-item
+    {
+        margin-left: 40px;
+        margin-right: 40px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 8px;
+    }
 }
 
 /* Featurettes
@@ -379,71 +387,74 @@ footer
 
 .login-box
 {
-    height: 450px;
-    width: 600px;
-    border-radius: 5px;
-}
-
-.right-side
-{
-    width: 384px;
-    height: 450px;
-    background: #fff;
-}
-
-.left-side
-{
-    width: 230px;
-    height: 450px;
-    background: #ec694f;
-    margin-left: 15px;
-    border-radius: 4px;
+    position: relative;
+    width: 90%;
+    max-width: 570px;
+    background: #FFF;
+    margin: 3em auto 4em;
+    cursor: auto;
+    border-radius: 0.25em;
 }
 
 #login-btn
 {
-    width: 298px;
     margin-top: 60px;
     background: #ec694f;
     color: #fff;
-    margin-left: 40px;
-    height: 45px;
+    margin-left: 16%;
+    width: 65%;
+    height: 40px;
 }
 
 #register-btn
 {
-    width: 298px;
     margin-top: 17px;
     background: #fff;
     color: #ec694f;
-    margin-left: 40px;
-    height: 45px;
+    margin-left: 16%;
+    height: 40px;
+    width: 65%;
 }
 
-.right-side .mdl-textfield
+.close
 {
-    margin-left: 40px;
-    top: 45px;
+    color: #000;
+    float: right;
+    font-size: 47px;
+    font-weight: bold;
 }
 
-.right-side .mdl-checkbox
+.close:hover, .close:focus
 {
-    margin-left: 40px;
-    margin-top: 38px;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-.login-box .right-side h2,p
-{
-    color: #fff;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 150%;
+#myModal {
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4);
 }
 
-#login-text
+.cd-form
 {
-    color: #fff;
+    padding-left: 20px;
+    padding-bottom: 45px;
 }
+
+.cd-form .mdl-textfield
+{
+    width: 65%;
+    margin-left: 16%;
+    top: 25px;
+}
+
 
 /* Cart page style css code
 ----------------------------------------------------------*/
@@ -452,7 +463,7 @@ footer
 
 /*--------Content box hide or show on screen sizes-------*/
 
-@media (max-width:767px)
+@media (max-width: 599px)
 {
     #place-order-content
     {
@@ -460,7 +471,7 @@ footer
     }
 }
 
-@media (min-width:768px)
+@media (min-width: 600px)
 {
     .btn-group
     {
@@ -597,4 +608,6 @@ footer
     -moz-box-shadow: -1px -1px 11px -2px rgba(0,0,0,0.75);
     box-shadow: -1px -1px 11px -2px rgba(0,0,0,0.75);
 }
+
+
 
