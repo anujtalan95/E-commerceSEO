@@ -9,7 +9,7 @@
         <title>MegaMart</title>         
         <!-- Bootstrap core CSS -->         
         <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet"> 
-        <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet"> 
+        <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">  
         <!-- Material Design core CSS -->         
         <link href="assets/mdl/material.min.css" rel="stylesheet"> 
         <!-- Slick carousel core CSS -->         
@@ -70,10 +70,13 @@
                             </ul>                             
                         </div>                         
                         <a class="mdl-navigation__link" href="">Register</a> 
-                        <a class="mdl-navigation__link" href="">Login</a> 
+                        <a class="mdl-navigation__link" href="">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="login-button" style="background: #ec694f;
+    color: #fff;">Login</button>
+                        </a>                         
                     </nav>                     
                     <div class="mdl-navigation cart"> 
-                        <a class="mdl-navigation__link" href="">cart</a> 
+                        <a class="mdl-navigation__link" href=""><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></a> 
                     </div>                     
                 </div>                 
             </header>             
@@ -87,9 +90,36 @@
                     <a class="mdl-navigation__link" href="">Computer & Accessories</a> 
                     <a class="mdl-navigation__link" href="">Clothing</a> 
                     <a class="mdl-navigation__link" href="">Register</a> 
-                    <a class="mdl-navigation__link" href="">Login</a> 
+                    <a class="mdl-navigation__link" href=""><button id="login-button2" style="background:transparent; border:none;">Login</button></a> 
                 </nav>                 
             </div>
+            <!-- Navbar Close-->
+            <!--login box -->
+            <div id="myModal" style="display:none;">
+                <div class="login-box"> 
+                    <span class="close">&times;</span>
+                    <!-- Textfield with Floating Label -->
+                    <form action="#" class="cd-form">
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" id="sample3">
+                            <label class="mdl-textfield__label" for="sample3">Enter Email Address</label>
+                        </div>
+                        <!-- Numeric Textfield with Floating Label -->
+                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample4">
+                            <label class="mdl-textfield__label" for="sample4">Enter Password</label>
+                            <span class="mdl-textfield__error">Input is not a number!</span>
+                        </div>
+                        <!-- Raised button with ripple -->
+                        <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="login-btn">Login</button>
+                        <!-- Raised button with ripple -->
+                        <a href="signup.html">
+                            <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" id="register-btn">Sign Up</button>
+                        </a>
+                    </form>
+                </div>
+            </div>
+            <!--login box -->
             <main class="mdl-layout__content"> 
                 <div class="page-content"> 
                     <!-- Your content goes here -->                     
@@ -304,13 +334,13 @@
                 </div>                 
             </main>             
             <!-- Carousel
-    ================================================== -->                          
+    ================================================== -->             
         </div>         
         <!-- Bootstrap core JavaScript
     ================================================== -->         
         <!-- Placed at the end of the document so the pages load faster -->         
         <script src="assets/js/jquery-3.1.1.min.js"></script>         
-        <script src="assets/js/jquery-migrate-1.4.1.min.js"></script>         
+        <script src="assets/js/jquery-migrate-1.4.1.min.js"></script>              
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>         
         <script src="assets/js/bootstrap-hover-dropdown.min.js" type="text/javascript"></script>         
         <script src="assets/mdl/material.min.js"></script>         
