@@ -54,15 +54,31 @@ $(document).ready(function(){
 
 $("#login-button").click(function(event){
   event.preventDefault();
-  $("#myModal").fadeToggle("fast");
+  $("#login-Modal").fadeIn("fast");
 });
 
 $("#login-button2").click(function(event){
   event.preventDefault();
-  $("#myModal").fadeToggle("fast");
+  $("#login-Modal").fadeIn("fast");
+});
+
+$("#signup-button").click(function(event){
+  event.preventDefault();
+  $("#signup-Modal").fadeIn("fast");
+});
+
+$("#signup-button2").click(function(event){
+  event.preventDefault();
+  $("#signup-Modal").fadeIn("fast");
 });
 
 $(".close").click(function(){
-  $("#myModal").fadeToggle("fast");
-})  
+  if($("#login-Modal").hasClass('open')){
+    $("#login-Modal").fadeOut("fast");
+  }
+  if($("#signup-Modal").hasClass('open')){
+    $("#signup-Modal").fadeOut("fast");
+  }
+});  
+
 });
