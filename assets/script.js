@@ -52,6 +52,21 @@ $(document).ready(function(){
     ]
   });
 
+$('.product-images').slick({
+  dots: true,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true
+      }
+    }
+    ]
+  });
+
 $("#login-button").click(function(event){
   event.preventDefault();
   $("#login-Modal").fadeIn("fast");
