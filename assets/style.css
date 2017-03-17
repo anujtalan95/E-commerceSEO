@@ -466,7 +466,6 @@ footer
     top: 25px;
 }
 
-
 /* Cart page style css code
 ----------------------------------------------------------*/
 
@@ -519,7 +518,7 @@ footer
 .ibox-title h4,
 .ibox-title h5
 {
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 .ibox
@@ -565,7 +564,9 @@ footer
     border-image: none;
     border-style: solid solid none;
     border-width: 1px 0;
-    padding: 15px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
 }
 
 .ibox-content
@@ -619,4 +620,78 @@ footer
     -moz-box-shadow: -1px -1px 11px -2px rgba(0,0,0,0.75);
     box-shadow: -1px -1px 11px -2px rgba(0,0,0,0.75);
 }
+
+/* Product Detail
+-------------------------------------*/
+
+.image-imitation
+{
+    background-color: #f8f8f9;
+    text-align: center;
+    padding: 200px 0;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.product-detail .ibox-content
+{
+    padding: 15px 30px 20px;
+}
+
+.m-t-md
+{
+    margin-top: 20px;
+}
+
+.product-main-price small
+{
+    font-size: 20px;
+}
+
+#cart-btn
+{
+    color: #fff;
+    background: #ec694f;
+    font-weight: 600;
+    right: 10px;
+    width: 165px;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-size: 30px;
+    line-height: 1;
+    color: #ec694f;
+}
+
+.slick-prev,.slick-next
+{
+    width: 35px;
+}
+
+@media (max-width:767px)
+{
+    .image-imitation
+    {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    #cart-btn
+    {
+        right: 50px;
+    }
+}
+
+.font-bold
+{
+    font-weight: 600;
+}
+
+.m-b-xs
+{
+    margin-bottom: 5px;
+}
+
 
