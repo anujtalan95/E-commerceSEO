@@ -71,6 +71,11 @@ body
     background-color: rgba(0, 0, 0, 0.72);
 }
 
+.mdl-layout__header .mdl-layout__drawer-button
+{
+    background-color: #424244;
+}
+
 /* Navbar dropdown menu style
 ---------------------------------------------------*/
 
@@ -121,19 +126,30 @@ body
     }
 }
 
-@media (max-width: 599px)
+@media (max-width: 767px)
 {
     .slide
     {
-        height: 180px;
+        height: 200px;
+    }
+}
+
+@media (min-width:768px)
+{
+    .slide
+    {
+        height: 300px;
+        padding: 200px 0;
     }
 }
 
 .slide
 {
-    background-color: #7271af;
-    height: 300px;
+    background-color: #a59c9c;
     border-radius: 4px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 @media (min-width:768px)
@@ -564,9 +580,7 @@ footer
     border-image: none;
     border-style: solid solid none;
     border-width: 1px 0;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 15px;
+    padding: 10px 20px;
 }
 
 .ibox-content
@@ -693,5 +707,4 @@ footer
 {
     margin-bottom: 5px;
 }
-
 
