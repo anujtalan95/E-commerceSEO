@@ -98,3 +98,21 @@ $(".close").click(function(){
 
 
 });
+
+$(document).ready(function () {
+
+    // Add body-small class if window less than 768px
+    if ($(this).width() < 769) {
+        $('body').addClass('body-small')
+    } else {
+        $('body').removeClass('body-small')
+    }
+
+    // Minimalize menu
+    $('.navbar-minimalize').on('click', function () {
+        $("body").toggleClass("mini-navbar");
+        SmoothlyMenu();
+
+    });
+
+});
