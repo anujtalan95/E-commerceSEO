@@ -1,14 +1,61 @@
+
+/* CUSTOM CSS FOR ADMIN PANEL
+-----------------------------------------------------*/
+
+body
+{
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #2f4050;
+    font-size: 13px;
+    color: #676a6c;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+    font-weight: 100;
+}
+
+h1
+{
+    font-size: 30px;
+}
+
+h5
+{
+    font-size: 12px;
+}
+
+h3,
+h4,
+h5
+{
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+/*--------- Main container-----*/
 #wrapper
 {
     width: 100%;
     overflow-x: hidden;
 }
 
+/* Side Menu
+-------------------------------------*/
 .navbar-default
 {
     background-color: transparent;
     border-color: #2f4050;
 }
+
+/* Responsive CSS for side menu. Hide in mobile devices
+-----------------------------------------------------------*/
 
 @media (min-width: 768px)
 {
@@ -28,11 +75,48 @@
     }
 }
 
+/* Navbar header for Admin profile display and Logo
+------------------------------------------------------------*/
 .nav-header
 {
     padding: 33px 25px;
     background-color: #2f4050;
     background-image: url("patterns/header-profile.png");
+}
+
+.img-circle
+{
+    border-radius: 50%;
+}
+
+.nav-header a
+{
+    color: #DFE4ED;
+}
+
+.nav > li > a
+{
+    color: #a7b1c2;
+    font-weight: 600;
+    padding: 14px 20px 14px 25px;
+}
+
+.nav > li.active
+{
+    border-left: 4px solid #19aa8d;
+    background: #293846;
+}
+
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus
+{
+    background-color: #293846;
+    color: white;
+}
+
+.nav > li.active > a
+{
+    color: #ffffff;
 }
 
 .pace-done .navbar-static-side,
@@ -45,16 +129,6 @@
     -moz-transition: all 0.4s;
     -o-transition: all 0.4s;
     transition: all 0.4s;
-}
-
-.img-circle
-{
-    border-radius: 50%;
-}
-
-.nav-header a
-{
-    color: #DFE4ED;
 }
 
 a
@@ -141,6 +215,59 @@ body.mini-navbar.fixed-sidebar .profile-element,
     padding: 18px 0;
 }
 
+/*-------- Top Navbar --------------*/
+.navbar
+{
+    border: 0;
+}
+
+.navbar-fixed-top,
+.navbar-static-top
+{
+    background: #f3f3f4;
+}
+
+.minimalize-styl-2
+{
+    padding: 4px 12px;
+    margin: 14px 5px 5px 20px;
+    font-size: 14px;
+    float: left;
+}
+
+.navbar-top-links li
+{
+    display: inline-block;
+}
+
+.nav.navbar-right > li > a
+{
+    color: #999c9e;
+}
+
+.navbar-top-links li a
+{
+    padding: 20px 10px;
+    min-height: 50px;
+}
+
+.nav.navbar-top-links a
+{
+    font-size: 14px;
+}
+
+.m-r-sm
+{
+    margin-right: 10px;
+}
+
+.nav.navbar-right > li > a
+{
+    color: #999c9e;
+}
+
+/* Side Menu list -------*/
+
 .nav > li.active
 {
     border-left: 4px solid #19aa8d;
@@ -152,6 +279,9 @@ body.mini-navbar.fixed-sidebar .profile-element,
     margin-right: 6px;
 }
 
+/* Main Dashboard style
+-----------------------------------------------*/
+
 #page-wrapper
 {
     min-height: auto;
@@ -159,7 +289,7 @@ body.mini-navbar.fixed-sidebar .profile-element,
 
 #page-wrapper
 {
-	padding: 0 15px;
+    padding: 0 15px;
     min-height: 568px;
     position: relative !important;
 }
@@ -195,17 +325,6 @@ body.mini-navbar.fixed-sidebar .profile-element,
     border-bottom: 1px solid #e7eaec !important;
 }
 
-.navbar
-{
-    border: 0;
-}
-
-.navbar-fixed-top,
-.navbar-static-top
-{
-    background: #f3f3f4;
-}
-
 .white-bg
 {
     background-color: #ffffff;
@@ -220,14 +339,6 @@ body.mini-navbar.fixed-sidebar .profile-element,
     }
 }
 
-.minimalize-styl-2
-{
-    padding: 4px 12px;
-    margin: 14px 5px 5px 20px;
-    font-size: 14px;
-    float: left;
-}
-
 .btn
 {
     border-radius: 3px;
@@ -240,35 +351,7 @@ body.mini-navbar.fixed-sidebar .profile-element,
     color: #FFFFFF;
 }
 
-.navbar-top-links li
-{
-    display: inline-block;
-}
-
-.nav > li > a
-{
-    color: #a7b1c2;
-    font-weight: 600;
-    padding: 14px 20px 14px 25px;
-}
-
-.nav.navbar-right > li > a
-{
-    color: #999c9e;
-}
-
-.navbar-top-links li a
-{
-    padding: 20px 10px;
-    min-height: 50px;
-}
-
-.nav.navbar-top-links a
-{
-    font-size: 14px;
-}
-
-/* Main dashboard wrapper
+/* Dashboard Info Boxes
 ---------------------------------------------*/
 
 .wrapper
@@ -305,3 +388,167 @@ body.mini-navbar.fixed-sidebar .profile-element,
     padding: 15px 15px 7px;
     min-height: 48px;
 }
+
+.label
+{
+    background-color: #d1dade;
+    color: #5e5e5e;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 3px 8px;
+    text-shadow: none;
+}
+
+.label-success,
+.badge-success
+{
+    background-color: #1c84c6;
+    color: #FFFFFF;
+}
+
+.label-info,
+.badge-info
+{
+    background-color: #23c6c8;
+    color: #FFFFFF;
+}
+
+.label-primary,
+.badge-primary
+{
+    background-color: #1ab394;
+    color: #FFFFFF;
+}
+
+.label-danger,
+.badge-danger
+{
+    background-color: #ed5565;
+    color: #FFFFFF;
+}
+
+.ibox-title .label
+{
+    float: left;
+    margin-left: 4px;
+}
+
+.no-margins
+{
+    margin: 0 !important;
+}
+
+.ibox-title h5
+{
+    display: inline-block;
+    font-size: 14px;
+    margin: 0 0 7px;
+    padding: 0;
+    text-overflow: ellipsis;
+    float: left;
+}
+
+.ibox-content
+{
+    background-color: #ffffff;
+    color: inherit;
+    padding: 15px 20px 20px 20px;
+    border-color: #e7eaec;
+    border-image: none;
+    border-style: solid solid none;
+    border-width: 1px 0;
+}
+
+.stat-percent
+{
+    float: right;
+}
+
+.text-success
+{
+    color: #1c84c6;
+}
+
+.float-e-margins .btn
+{
+    margin-bottom: 5px;
+}
+
+.btn-white
+{
+    color: inherit;
+    background: white;
+    border: 1px solid #e7eaec;
+}
+
+.flot-chart
+{
+    display: block;
+    height: 200px;
+}
+
+.flot-chart-content
+{
+    width: 100%;
+    height: 100%;
+}
+
+.stat-list
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.stat-list li:first-child
+{
+    margin-top: 0;
+}
+
+.stat-list li
+{
+    margin-top: 15px;
+    position: relative;
+}
+
+.stat-percent
+{
+    float: right;
+}
+
+.text-navy
+{
+    color: #1ab394;
+}
+
+.progress-mini
+{
+    margin-top: 5px;
+}
+
+.progress-mini,
+.progress-mini .progress-bar
+{
+    height: 5px;
+    margin-bottom: 0;
+}
+
+.progress-bar
+{
+    background-color: #1ab394;
+}
+
+/* Admin Footer
+-------------------------------*/
+.footer
+{
+    background: none repeat scroll 0 0 white;
+    border-top: 1px solid #e7eaec;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+}
+
