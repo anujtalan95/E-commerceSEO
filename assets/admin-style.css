@@ -1,4 +1,9 @@
 
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,500,700");
+
 /* CUSTOM CSS FOR ADMIN PANEL
 -----------------------------------------------------*/
 
@@ -39,7 +44,97 @@ h5
     font-weight: 600;
 }
 
+body.mini-navbar .logo-element
+{
+    display: block;
+}
+
+.pace-done .navbar-static-side,
+.pace-done .nav-header,
+.pace-done li.active,
+.pace-done #page-wrapper,
+.pace-done .footer
+{
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+body.mini-navbar .navbar-static-side
+{
+    width: 70px;
+}
+
+body.mini-navbar .profile-element,
+body.mini-navbar .nav-label,
+body.mini-navbar .navbar-default .nav li a span
+{
+    display: none;
+}
+
+body.mini-navbar .nav-header
+{
+    padding: 0;
+    background-color: #1ab394;
+}
+
+body.canvas-menu .nav-header
+{
+    padding: 33px 25px;
+}
+
+body.mini-navbar #page-wrapper
+{
+    margin: 0 0 0 70px;
+}
+
+body.fixed-sidebar.mini-navbar .footer
+{
+    margin: 0 0 0 0 !important;
+}
+
+body.mini-navbar .nav-header
+{
+    padding: 0;
+    background-color: #1ab394;
+}
+
+body.mini-navbar .profile-element,
+body.mini-navbar .nav-label,
+body.mini-navbar .navbar-default .nav li a span
+{
+    display: none;
+}
+
+.navbar-top-links li
+{
+    display: inline-block;
+}
+
+@media (max-width: 768px)
+{
+    #page-wrapper
+    {
+        position: inherit;
+        margin: 0 0 0 0;
+        min-height: 1000px;
+    }
+    .body-small .navbar-static-side
+    {
+        display: none;
+        z-index: 2001;
+        position: absolute;
+        width: 70px;
+    }
+    .body-small.mini-navbar .navbar-static-side
+    {
+        display: block;
+    }
+}
+
 /*--------- Main container-----*/
+
 #wrapper
 {
     width: 100%;
@@ -48,6 +143,7 @@ h5
 
 /* Side Menu
 -------------------------------------*/
+
 .navbar-default
 {
     background-color: transparent;
@@ -77,6 +173,7 @@ h5
 
 /* Navbar header for Admin profile display and Logo
 ------------------------------------------------------------*/
+
 .nav-header
 {
     padding: 33px 25px;
@@ -117,18 +214,6 @@ h5
 .nav > li.active > a
 {
     color: #ffffff;
-}
-
-.pace-done .navbar-static-side,
-.pace-done .nav-header,
-.pace-done li.active,
-.pace-done #page-wrapper,
-.pace-done .footer
-{
-    -webkit-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    transition: all 0.4s;
 }
 
 a
@@ -216,6 +301,7 @@ body.mini-navbar.fixed-sidebar .profile-element,
 }
 
 /*-------- Top Navbar --------------*/
+
 .navbar
 {
     border: 0;
@@ -290,8 +376,8 @@ body.mini-navbar.fixed-sidebar .profile-element,
 #page-wrapper
 {
     padding: 0 15px;
-    min-height: 568px;
     position: relative !important;
+    min-height: 528px;
 }
 
 @media (min-width: 768px)
@@ -541,6 +627,7 @@ body.mini-navbar.fixed-sidebar .profile-element,
 
 /* Admin Footer
 -------------------------------*/
+
 .footer
 {
     background: none repeat scroll 0 0 white;
@@ -550,5 +637,45 @@ body.mini-navbar.fixed-sidebar .profile-element,
     padding: 10px 20px;
     position: absolute;
     right: 0;
+}
+
+.tabs-container .nav-tabs > li.active > a,
+.tabs-container .nav-tabs > li.active > a:hover,
+.tabs-container .nav-tabs > li.active > a:focus
+{
+    border: 1px solid #e7eaec;
+    border-bottom-color: transparent;
+    background-color: #fff;
+    color: #626262;
+}
+
+tabs-container .nav-tabs > li a:hover
+{
+    background: transparent;
+    border-color: transparent;
+}
+
+.tabs-container .nav-tabs
+{
+    border-bottom: 1px solid #e7eaec;
+}
+
+.tabs-container .panel-body
+{
+    background: #fff;
+    border: 1px solid #e7eaec;
+    border-radius: 2px;
+    padding: 20px;
+    position: relative;
+}
+
+#login-btn
+{
+    margin-top: 40px;
+    background: #ec694f;
+    color: #fff;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
 }
 
