@@ -67,9 +67,10 @@ $('.product-images').slick({
     ]
   });
 
-$("#login-button").click(function(event){
+$(".login-button").click(function(event){
   event.preventDefault();
   $("#login-Modal").fadeIn("fast");
+  $("#signup-Modal").fadeOut("fast");
 });
 
 $("#login-button2").click(function(event){
@@ -77,9 +78,10 @@ $("#login-button2").click(function(event){
   $("#login-Modal").fadeIn("fast");
 });
 
-$("#signup-button").click(function(event){
+$(".signup-button").click(function(event){
   event.preventDefault();
   $("#signup-Modal").fadeIn("fast");
+  $("#login-Modal").fadeOut("fast");
 });
 
 $("#signup-button2").click(function(event){
