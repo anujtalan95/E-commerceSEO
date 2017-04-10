@@ -4,12 +4,13 @@
         <meta charset="utf-8"> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>MegaMart | Products</title>         
-        <link href="css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
+        <link href="assets/mdl/material.min.css" rel="stylesheet">
         <link href="assets/font-awesome/css/font-awesome.css" rel="stylesheet"> 
-        <link href="css/plugins/summernote/summernote.css" rel="stylesheet"> 
-        <link href="css/plugins/summernote/summernote-bs3.css" rel="stylesheet"> 
+        <link href="assets/css/plugins/summernote/summernote.css" rel="stylesheet"> 
+        <link href="assets/css/plugins/summernote/summernote-bs3.css" rel="stylesheet"> 
         <link href="css/plugins/datapicker/datepicker3.css" rel="stylesheet"> 
-        <link href="css/animate.css" rel="stylesheet"> 
+        <link href="assets/css/animate.css" rel="stylesheet"> 
         <link href="assets/admin-style.css" rel="stylesheet"> 
     </head>     
     <body> 
@@ -22,18 +23,18 @@
                                 <span> <img alt="image" class="img-circle" src="img/profile_small.jpg" /> </span> 
                                 <a data-toggle="dropdown" class="dropdown-toggle" href="#"> <span class="clear"> <span class="block m-t-xs"> <strong class="font-bold">Anuj Talan</strong> </span> <span class="text-muted text-xs block">Front End Developer <b class="caret"></b></span> </span> </a> 
                                 <ul class="dropdown-menu animated fadeInRight m-t-xs"> 
-                                    <li>
-                                        <a href="#">Profile</a>
+                                    <li> 
+                                        <a href="#">Profile</a> 
                                     </li>                                     
-                                    <li>
-                                        <a href="#">Contacts</a>
+                                    <li> 
+                                        <a href="#">Contacts</a> 
                                     </li>                                     
-                                    <li>
-                                        <a href="#">Mailbox</a>
+                                    <li> 
+                                        <a href="#">Mailbox</a> 
                                     </li>                                     
                                     <li class="divider"></li>                                     
-                                    <li>
-                                        <a href="#">Logout</a>
+                                    <li> 
+                                        <a href="#">Logout</a> 
                                     </li>                                     
                                 </ul>                                 
                             </div>                             
@@ -48,10 +49,10 @@
                             <a href="products-table.html"><i class="fa fa-diamond"></i> <span class="nav-label">Products list</span></a> 
                         </li>                         
                         <li class=""> 
-                            <a href="orders-table.html"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Orders</span></a>
+                            <a href="orders-table.html"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Orders</span></a> 
                         </li>                         
                         <li class=""> 
-                            <a href="products-edit.html"><i class="fa fa-table"></i> <span class="nav-label">Product edit</span></a>
+                            <a href="products-edit.html"><i class="fa fa-table"></i> <span class="nav-label">Product edit</span></a> 
                         </li>                         
                     </ul>                     
                 </div>                 
@@ -92,268 +93,231 @@
                 </div>                 
                 <div class="wrapper wrapper-content animated fadeInRight ecommerce"> 
                     <div class="row"> 
-                        <div class="col-lg-12"> 
+                        <div class="col-lg-12">
                             <div class="tabs-container"> 
-                                <ul class="nav nav-tabs"> 
-                                    <li class="active">
-                                        <a data-toggle="tab" href="#tab-1"> Product info</a>
-                                    </li>                                     
-                                    <li class="">
-                                        <a data-toggle="tab" href="#tab-2"> Data</a>
-                                    </li>                                     
-                                    <li class="">
-                                        <a data-toggle="tab" href="#tab-4"> Images</a>
-                                    </li>                                     
-                                </ul>                                 
-                                <div class="tab-content"> 
-                                    <div id="tab-1" class="tab-pane active"> 
-                                        <div class="panel-body"> 
-                                            <fieldset class="form-horizontal"> 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Name:</label>                                                     
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" placeholder="Product name">
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Price:</label>                                                     
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" placeholder="$160.00">
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Description:</label>                                                     
-                                                    <div class="col-sm-10"> 
-                                                        <div class="summernote"> 
-                                                            <h3>Lorem Ipsum is simply</h3> 
-                                                            dummy text of the printing and typesetting industry. 
-                                                            <strong>Lorem Ipsum has been the industry's</strong> standard dummy text ever since the 1500s,
-                                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                                                            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
-                                                            typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
-                                                            <br /> 
-                                                        </div>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Meta Tag Title:</label>                                                     
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" placeholder="...">
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Meta Tag Description:</label>                                                     
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" placeholder="Sheets containing Lorem">
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Meta Tag Keywords:</label>                                                     
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" placeholder="Lorem, Ipsum, has, been">
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </fieldset>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div id="tab-2" class="tab-pane"> 
-                                        <div class="panel-body"> 
-                                            <fieldset class="form-horizontal"> 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">ID:</label>                                                     
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" placeholder="543">
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Model:</label>                                                     
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" placeholder="...">
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Location:</label>                                                     
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" placeholder="location">
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Quantity:</label>                                                     
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" placeholder="Quantity">
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Minimum quantity:</label>                                                     
-                                                    <div class="col-sm-10">
-                                                        <input type="text" class="form-control" placeholder="2">
-                                                    </div>                                                     
-                                                </div>                                                 
-                                                <div class="form-group">
-                                                    <label class="col-sm-2 control-label">Status:</label>                                                     
-                                                    <div class="col-sm-10"> 
-                                                        <select class="form-control"> 
-                                                            <option>option 1</option>                                                             
-                                                            <option>option 2</option>                                                             
-                                                        </select>                                                         
-                                                    </div>                                                     
-                                                </div>                                                 
-                                            </fieldset>                                             
-                                        </div>                                         
-                                    </div>                                     
-                                    <div id="tab-4" class="tab-pane"> 
-                                        <div class="panel-body"> 
-                                            <div class="table-responsive"> 
-                                                <table class="table table-bordered table-stripped"> 
-                                                    <thead> 
-                                                        <tr> 
-                                                            <th> 
-                                                        Image preview</th> 
-                                                            <th> 
-                                                        Image url</th> 
-                                                            <th> 
-                                                        Sort order</th> 
-                                                            <th> 
-                                                        Actions</th> 
-                                                        </tr>                                                         
-                                                    </thead>                                                     
-                                                    <tbody> 
-                                                        <tr> 
-                                                            <td> 
-                                                                <img src="img/gallery/2s.jpg"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" disabled value="../../mydomain.com/images/image1.html"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" value="1"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <button class="btn btn-white">
-                                                                    <i class="fa fa-trash"></i> 
-                                                                </button>                                                                 
-                                                            </td>                                                             
-                                                        </tr>                                                         
-                                                        <tr> 
-                                                            <td> 
-                                                                <img src="img/gallery/1s.jpg"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" disabled value="../../mydomain.com/images/image2.html"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" value="2"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <button class="btn btn-white">
-                                                                    <i class="fa fa-trash"></i> 
-                                                                </button>                                                                 
-                                                            </td>                                                             
-                                                        </tr>                                                         
-                                                        <tr> 
-                                                            <td> 
-                                                                <img src="img/gallery/3s.jpg"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" disabled value="../../mydomain.com/images/image3.html"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" value="3"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <button class="btn btn-white">
-                                                                    <i class="fa fa-trash"></i> 
-                                                                </button>                                                                 
-                                                            </td>                                                             
-                                                        </tr>                                                         
-                                                        <tr> 
-                                                            <td> 
-                                                                <img src="img/gallery/4s.jpg"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" disabled value="../../mydomain.com/images/image4.html"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" value="4"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <button class="btn btn-white">
-                                                                    <i class="fa fa-trash"></i> 
-                                                                </button>                                                                 
-                                                            </td>                                                             
-                                                        </tr>                                                         
-                                                        <tr> 
-                                                            <td> 
-                                                                <img src="img/gallery/5s.jpg"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" disabled value="../../mydomain.com/images/image5.html"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" value="5"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <button class="btn btn-white">
-                                                                    <i class="fa fa-trash"></i> 
-                                                                </button>                                                                 
-                                                            </td>                                                             
-                                                        </tr>                                                         
-                                                        <tr> 
-                                                            <td> 
-                                                                <img src="img/gallery/6s.jpg"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" disabled value="../../mydomain.com/images/image6.html"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" value="6"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <button class="btn btn-white">
-                                                                    <i class="fa fa-trash"></i> 
-                                                                </button>                                                                 
-                                                            </td>                                                             
-                                                        </tr>                                                         
-                                                        <tr> 
-                                                            <td> 
-                                                                <img src="img/gallery/7s.jpg"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" disabled value="../../mydomain.com/images/image7.html"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <input type="text" class="form-control" value="7"> 
-                                                            </td>                                                             
-                                                            <td> 
-                                                                <button class="btn btn-white">
-                                                                    <i class="fa fa-trash"></i> 
-                                                                </button>                                                                 
-                                                            </td>                                                             
-                                                        </tr>                                                         
-                                                    </tbody>                                                     
-                                                </table>                                                 
+                                <div class="add-new-product"> 
+                                    <h3>
+            Add New Product</h3>
+                                </div>                                 
+                                <div class="panel-body"> 
+                                    <fieldset class="form-horizontal"> 
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Name:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="Product name"> 
+                                            </div>                                             
+                                        </div>
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Brand:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="Brand name"> 
                                             </div>                                             
                                         </div>                                         
-                                    </div>                                     
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Description:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <textarea class="summernote"> 
+                                                    <h3>Lorem Ipsum is simply</h3> 
+                                                    dummy text of the printing and typesetting industry. 
+                                                    <strong>Lorem Ipsum has been the industry's</strong> standard dummy text ever since the 1500s,
+                                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                                    <br /> 
+                                                </textarea>                                                 
+                                            </div>                                             
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Category:</label>
+                                            <div class="btn-group col-sm-10" data-toggle="buttons">
+                                                <button type="button" id="mob-catg" class="btn btn-primary" autocomplete="off">
+                                                    Mobiles
+</button>
+                                                <button type="button" id="book-catg" class="btn btn-primary" autocomplete="off">
+                                                    Books
+</button>
+                                                <button type="button" id="cloth-catg" class="btn btn-primary" autocomplete="off">
+                                                    Clothings
+</button>
+                                                <button type="button" id="comp-catg" class="btn btn-primary" autocomplete="off">
+                                                    Computer & Accessories
+</button>
+                                                <button type="button" id="game-catg" class="btn btn-primary" autocomplete="off">
+                                                    Video Games
+</button>
+                                            </div>
+                                        </div>                                         
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Meta Tag Title:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="..."> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Meta Tag Description:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="Sheets containing Lorem"> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Meta Tag Keywords:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="Lorem, Ipsum, has, been"> 
+                                            </div>                                             
+                                        </div>                                         
+                                    </fieldset>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div class="col-lg-12 mobile-catg animated fadeInRight">
+                            <div class="tabs-container"> 
+                                <div class="add-new-product"> 
+                                    <h3>Mobiles Category</h3>
+                                </div>                                 
+                                <div class="panel-body"> 
+                                    <fieldset class="form-horizontal"> 
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">ROM:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="Mobile ROM"> 
+                                            </div>                                             
+                                        </div>
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Color:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="Product color"> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Specification:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <div class="summernote"> 
+                                                    <h3>Lorem Ipsum is simply</h3> 
+                                                    dummy text of the printing and typesetting industry. 
+                                                    <strong>Lorem Ipsum has been the industry's</strong> standard dummy text ever since the 1500s,
+                                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                                    <br /> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Price:</label>
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="$500"> 
+                                            </div>
+                                        </div>                                                                                  
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Image:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="Image URL"> 
+                                            </div>                                             
+                                        </div>
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Stock:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="number" class="form-control" min="0" placeholder="Stock Quantity"> 
+                                            </div>                                             
+                                        </div>
+                                        <div class="form-group pull-right"> 
+                                            <div class="col-sm-10"> 
+                                                <button id="demo-show-toast" class="mdl-button mdl-js-button mdl-button--raised" type="button">Submit Button</button>
+
+                                            </div>                                             
+                                        </div>                                         
+                                    </fieldset>                                     
+                                </div>                                 
+                            </div>                             
+                        </div>
+                        <div class="col-lg-12 books-catg animated fadeInRight">
+                            <div class="tabs-container"> 
+                                <div class="add-new-product"> 
+                                    <h3>Books Category</h3>
+                                </div>                                 
+                                <div class="panel-body"> 
+                                    <fieldset class="form-horizontal"> 
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Language:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="English or Hindi"> 
+                                            </div>                                             
+                                        </div>
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Publisher:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="Publisher Name"> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Description:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <div class="summernote"> 
+                                                    <h3>Lorem Ipsum is simply</h3> 
+                                                    dummy text of the printing and typesetting industry. 
+                                                    <strong>Lorem Ipsum has been the industry's</strong> standard dummy text ever since the 1500s,
+                                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                                                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic
+                                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with
+                                                    <br /> 
+                                                </div>                                                 
+                                            </div>                                             
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Price:</label>
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="$500"> 
+                                            </div>
+                                        </div>                                         
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Quantity:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="..."> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Image:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="Image URL"> 
+                                            </div>                                             
+                                        </div>                                         
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Edition:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="Image URL"> 
+                                            </div>                                             
+                                        </div>
+                                        <div class="form-group"> 
+                                            <label class="col-sm-2 control-label">Pages:</label>                                             
+                                            <div class="col-sm-10"> 
+                                                <input type="text" class="form-control" placeholder="Image URL"> 
+                                            </div>                                             
+                                        </div>
+                                    </fieldset>                                     
                                 </div>                                 
                             </div>                             
                         </div>                         
                     </div>                     
-                </div>                 
+                </div>    
+                <div id="demo-toast-example" class="mdl-js-snackbar mdl-snackbar">
+  <div class="mdl-snackbar__text"></div>
+  <button class="mdl-snackbar__action" type="button"></button>
+</div>             
                 <div class="footer"> 
                     <div class="pull-right"> 
                         10GB of 
                         <strong>250GB</strong> Free.
                     </div>                     
                     <div> 
-                        <strong>Copyright</strong> Example Company &copy; 2014-2017
+                        <strong>Copyright</strong>  &copy; 2016-2017
                     </div>                     
                 </div>                 
             </div>             
         </div>         
         <!-- Mainly scripts -->         
-        <script src="js/jquery-3.1.1.min.js"></script>         
-        <script src="js/bootstrap.min.js"></script>         
+        <script src="assets/js/jquery-3.1.1.min.js"></script>         
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>  
+        <script src="assets/mdl/material.min.js"></script>        
         <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>         
         <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>         
         <!-- Custom and plugin javascript -->         
